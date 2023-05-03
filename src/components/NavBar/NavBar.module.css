@@ -21,15 +21,21 @@
 }
     .navItem {
         color: #0F3D54;
-        height: 10px;;
+        height: 25px;;
+        font-size: 22px;
         text-decoration: none;
+        border: none;
+        font-weight: bold;
+        background: none;
         cursor: pointer;
         transition: all .1s ease-out;
     }
         .navItem:hover {
-            scale: 107%;
         }
 
+.dropdownElement {
+    font-size: 15px;
+}
 
 
 .contactUs {

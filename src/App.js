@@ -22,7 +22,7 @@ function App() {
   return (
     <>
        
-      {/* <div className="">
+      <div className="">
        <Router>
          <Routes>
            
@@ -35,12 +35,12 @@ function App() {
 
          </Routes>
        </Router>
-     </div> */}
+     </div>
      
      
-    
+{/*     
       <ComingSoon />
-      
+       */}
     </>
 
   );

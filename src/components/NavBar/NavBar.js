@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import BlueContactBtn from '../BlueContactBtn/BlueContactBtn';
+import DropdownMenu from './Dropdown/Dropdown';
 import css from './NavBar.module.css'
 import logo from './navLogo.png'
 
@@ -33,11 +34,22 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
+  const triggerElement = <a href="/services" className={css.navItem}>Services</a>;
+  const menuContent = (
+    <>
+      <a className={css.dropdownElement} href="/">Window Washing</a>
+      <br/>
+      <a className={css.dropdownElement} href="/">Gutter and Roof Cleaning</a>
+      <br/>
+      <a className={css.dropdownElement} href="/">Pressure Washing</a>
+    </>
+  );
+
     return (
       <>
       <div className={css.containerCenter}>
           <div className={css.navBlock}>
-            <a href="/services" className={css.navItem}>Services</a>
+            <DropdownMenu trigger={triggerElement} menu={menuContent} />
             <a href="/about" className={css.navItem}>About us</a>
             <p></p>
             <p></p>
