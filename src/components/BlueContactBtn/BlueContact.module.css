@@ -1,0 +1,18 @@
+
+.btn {
+    margin: 5px 15px;
+    display: flex;
+    color: white;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 12px 25px;
+    background-color: #0F3D54;
+    transition: all .1s ease-out;
+}
+.btn:hover {
+    scale: 107%;
+}
+.btnText {
+    margin:0;
+}

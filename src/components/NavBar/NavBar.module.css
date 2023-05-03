@@ -1,0 +1,39 @@
+.logo {
+    margin-top:-30px;
+    width: 270px;
+}
+
+.containerCenter {
+    margin: 28px 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.navBlock {
+    font-weight: 600;
+    color: #0F3D54;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+}
+    .navItem {
+        color: #0F3D54;
+        height: 10px;;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .1s ease-out;
+    }
+        .navItem:hover {
+            scale: 107%;
+        }
+
+
+
+.contactUs {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}

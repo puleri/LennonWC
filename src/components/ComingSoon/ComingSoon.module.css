@@ -1,0 +1,73 @@
+
+.container {
+    position: absolute;
+    top: -10vh;
+    width: 100vw;
+    height: 110vh;
+    overflow-y: auto;
+    background-image: url('./comingSoon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.socialGroup {
+    position: relative;
+    bottom: -750px !important;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta, .linked {
+    width: 35px;
+    margin: 20px;
+}
+
+
+@media (max-width:1201px)  { 
+    .container {
+        position: relative;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+        background-image: url('./comingSoon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .socialGroup {
+        position: relative;
+        bottom: -700px !important;
+        padding-bottom: 100px;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+}
+@media (min-width: 1515px) {
+    .socialGroup {
+        position: absolute;
+        bottom: 100px !important;
+    }
+}
+@media (max-width: 515px) {
+    .container {
+        position: relative;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: hidden;
+        background-image: url('./comingSoon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .socialGroup {
+        left: 42%;
+        position: absolute;
+        top: -100px;
+    }
+}
