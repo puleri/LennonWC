@@ -5,6 +5,13 @@ import "@fontsource/raleway/700.css"; // Weight 700.
 import "@fontsource/raleway/900.css"; // Weight 900.
 
 
+import "@fontsource/libre-franklin"
+import "@fontsource/libre-franklin/400.css"; // Weight 400.
+import "@fontsource/libre-franklin/700.css"; // Weight 700.
+import "@fontsource/libre-franklin/900.css"; // Weight 900.
+
+
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';

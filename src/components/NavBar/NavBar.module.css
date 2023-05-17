@@ -1,9 +1,14 @@
 .logo {
     margin-top:-30px;
-    width: 270px;
+    width: 290px;
+    background-color: #F9F8F8;
+    padding: 0 80px 10px 90px;
+    border-radius: 200px;
 }
 
 .containerCenter {
+    position: relative;
+    z-index: 2;
     margin: 28px 0;
     width: 100vw;
     display: flex;
@@ -17,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
+    width: 1000px;
 }
     .navItem {
         color: #0F3D54;
@@ -35,6 +40,7 @@
 
 .dropdownElement {
     font-size: 15px;
+    z-index: 4;
 }
 
 
