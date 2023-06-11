@@ -77,7 +77,7 @@ const PhotoCarousel = ({ photoArr }) => {
             opacity: index === currentPhotoIndex ? 1 : 0,
             transition: 'opacity 0.5s ease-in-out',
             position: 'absolute',
-            borderRadius: '200px 200px 0 0',
+            borderRadius: '5000px 5000px 0 0',
             top: 0,
             left: 0,
             width: '100%',

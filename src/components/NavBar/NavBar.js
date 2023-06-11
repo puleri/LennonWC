@@ -34,33 +34,36 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
-  const triggerElement = <a href="/services" className={css.navItem}>Services</a>;
+  const triggerElement = <p href="/services" className={css.navItem}>Menu</p>;
   const menuContent = (
     <>
-      <a className={css.dropdownElement} href="/">Window Washing</a>
+      <a className={css.dropdownElement} href="/">Home</a>
       <br/>
-      <a className={css.dropdownElement} href="/">Gutter and Roof Cleaning</a>
+      <a className={css.dropdownElement} href="/services">Services</a>
       <br/>
-      <a className={css.dropdownElement} href="/">Pressure Washing</a>
+      <a className={css.dropdownElement} href="/about">About us</a>
+      <br/>
+      <a className={css.dropdownElement} href="/reviews">Reviews</a>
+      <br/>
+      <a className={css.dropdownElement} href="/contact">Contact us</a>
+      <br/>
     </>
   );
+  <DropdownMenu trigger={triggerElement} menu={menuContent} />
+
 
     return (
       <>
       <div className={css.containerCenter}>
+          <div className={css.dropdownMobile}><DropdownMenu trigger={triggerElement} menu={menuContent} /></div>
           <div className={css.navBlock}>
-            <DropdownMenu trigger={triggerElement} menu={menuContent} />
+            <p></p>
+            <a href="/services" className={css.navItem}>Services</a>
             <a href="/about" className={css.navItem}>About us</a>
-            <p></p>
-            <p></p>
-            <p></p>
-            <a href="/" className={css.navItem}><img src={logo} className={css.logo}/></a>
-            <p></p>
-            <p></p>
-            <p></p>
+            <a href="/" className={css.navItemLogo}><img src={logo} className={css.logo}/></a>
             <a href="/reviews" className={css.navItem}>Reviews</a>
             <a href="/contact" className={css.navItem}>Contact us</a>
-
+            <p></p>
           </div>
       </div>
       </>

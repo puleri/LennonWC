@@ -6,6 +6,7 @@ import "@fontsource/raleway/900.css"; // Weight 900.
 
 
 import "@fontsource/libre-franklin"
+import "@fontsource/libre-franklin/200.css"; // Weight 400.
 import "@fontsource/libre-franklin/400.css"; // Weight 400.
 import "@fontsource/libre-franklin/700.css"; // Weight 700.
 import "@fontsource/libre-franklin/900.css"; // Weight 900.
@@ -21,7 +22,9 @@ import ComingSoon from './components/ComingSoon/ComingSoon';
 import Services from './components/Services/Services';
 import About from './components/About/About';
 import Reviews from './components/Reviews/Reviews';
-import ContactForm from './components/ContactForm/ContactForm';
+import Contact from './components/Contact/Contact';
+import ThankYou from './components/ThankYou/ThankYou';
+import License from './components/License/License';
 
 
 
@@ -37,7 +40,10 @@ function App() {
            <Route path="/services" element={<Services/>}></Route>
            <Route path="/about" element={<About/>}></Route>
            <Route path="/reviews" element={<Reviews/>}></Route>
-           <Route path="/contact" element={<ContactForm/>}></Route>
+           <Route path="/contact" element={<Contact/>}></Route>
+           <Route path="/thank-you" element={<ThankYou/>}></Route>
+           <Route path="/licensed" element={<License/>}></Route>
+
 
 
          </Routes>

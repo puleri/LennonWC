@@ -1,14 +1,14 @@
 .logo {
-    margin-top:-30px;
-    width: 290px;
+    margin-top:-40px;
+    width: 190px;
     background-color: #F9F8F8;
-    padding: 0 80px 10px 90px;
-    border-radius: 200px;
+    padding: 0 0px 0 10px;
 }
 
 .containerCenter {
     position: relative;
     z-index: 2;
+    height: 70px;
     margin: 28px 0;
     width: 100vw;
     display: flex;
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
+    width: 80vw;
 }
     .navItem {
         color: #0F3D54;
@@ -38,8 +38,25 @@
         .navItem:hover {
         }
 
+    .navItemLogo {
+        color: #0F3D54;
+        height: 25px;;
+        font-size: 22px;
+        text-decoration: none;
+        border: none;
+        font-weight: bold;
+        background: none;
+        cursor: pointer;
+        transition: all .1s ease-out;
+    }
+
+    .navItemLogo:hover {
+        scale: 1.1;
+        filter: none !important;
+    }
+
 .dropdownElement {
-    font-size: 15px;
+    font-size: 25px;
     z-index: 4;
 }
 
@@ -48,4 +65,18 @@
     position: absolute;
     right: 20px;
     top: 15px;
+}
+
+.dropdownMobile {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .dropdownMobile {
+        display: flex;
+    }
+    .navBlock {
+        display: none;
+        flex-direction: column;
+    }
 }
