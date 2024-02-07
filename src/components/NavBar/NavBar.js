@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import BlueContactBtn from '../BlueContactBtn/BlueContactBtn';
+import hamburger from '../../assets/photos/hamburger.svg'
 import DropdownMenu from './Dropdown/Dropdown';
 import css from './NavBar.module.css'
 import logo from './navLogo.png'
@@ -34,7 +35,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
-  const triggerElement = <p href="/services" className={css.navItem}>Menu</p>;
+  const triggerElement = <div href="/services" className={css.mobileNav}><img className={css.mobileLogo} src={logo} /><img className={css.hamburger} src={hamburger} /></div>;
   const menuContent = (
     <>
       <a className={css.dropdownElement} href="/">Home</a>
@@ -60,7 +61,7 @@ const Navbar = () => {
             <p></p>
             <a href="/services" className={css.navItem}>Services</a>
             <a href="/about" className={css.navItem}>About us</a>
-            <a href="/" className={css.navItemLogo}><img src={logo} className={css.logo}/></a>
+            <a href="/" className={css.navItemLogo}><img alt="Lennon Window Cleaning logo" src={logo} className={css.logo}/></a>
             <a href="/reviews" className={css.navItem}>Reviews</a>
             <a href="/contact" className={css.navItem}>Contact us</a>
             <p></p>

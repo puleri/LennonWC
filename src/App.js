@@ -51,9 +51,9 @@ function App() {
      </div>
      
      
-{/*     
-      <ComingSoon />
-       */}
+    
+      {/* <ComingSoon /> */}
+      
     </>
 
   );

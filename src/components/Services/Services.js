@@ -1,8 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Navbar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
 
 import green from '../../assets/photos/green-scrubber.jpg'
+import pressure from '../../assets/photos/pressurewash.jpg'
+import gutter from '../../assets/photos/gutter.jpeg'
+import xmas from '../../assets/photos/xmas.JPEG'
+import shingles from '../../assets/photos/cleanshingles.png'
+
+
+
+
+import CTA1 from '../CTA1/CTA1'
 
 
 const Services = () => {
@@ -25,7 +34,7 @@ const Services = () => {
                 <h1 className='license-h1'>Window</h1>
                 <span className='lisence-h1-span'>Cleaning Packages</span>
                 <div className='img-service-container'>
-                    <img className='window-service' src={green} />
+                    <img alt="window getting cleaned" className='window-service' src={green} />
                     <ul className='packages-container'>
                         <b className='package-bold'>Basic Package</b>
                         <ul>
@@ -75,7 +84,7 @@ const Services = () => {
                     <li>Fences and Gates: Over time, fences and gates can become weathered and coated in dirt or grime. Our pressure washing services can rejuvenate these structures, removing dirt, mold, and other contaminants, and enhancing their overall appeal.</li><br />
                     <li>Outdoor Furniture and Fixtures: We can also clean and refresh your outdoor furniture, fixtures, and other surfaces, such as pergolas, awnings, or play equipment. Our pressure washing techniques are safe and effective for a wide range of materials.</li>
                 </ol>
-                <img className='window-service' src={green} />
+                <img alt="home getting pressure washed" className='window-service' src={pressure} />
 
                 </div>
 
@@ -98,13 +107,12 @@ const Services = () => {
 
                 <p className='services-ol'><b>Benefits of Our Gutter Cleaning Services:</b></p>
                 <div className='img-service-container'>
-                <img className='window-service' src={green} />
+                <img alt="Micah cleaning gutters of home" className='window-service' src={gutter} />
                 <ol className='benefits-wrapper-right'>
-                    <li>Exterior Walls: We can restore the beauty of your home's exterior walls by power washing away years of accumulated dirt, dust, and pollutants. Our techniques are safe for different types of siding, such as vinyl, stucco, brick, or wood.</li><br />
-                    <li>Driveways and Sidewalks: Over time, driveways and sidewalks can become discolored and stained. Our pressure washing services can revitalize these surfaces, removing oil stains, tire marks, algae, and other unsightly blemishes, leaving them looking fresh and clean.</li><br />
-                    <li>Patios and Decks: Whether you have a wooden deck or a concrete patio, our pressure washing techniques can restore their original beauty. We can remove dirt, mildew, moss, and other debris that may have accumulated, helping to improve the overall appearance and safety of these outdoor spaces.</li><br />
-                    <li>Fences and Gates: Over time, fences and gates can become weathered and coated in dirt or grime. Our pressure washing services can rejuvenate these structures, removing dirt, mold, and other contaminants, and enhancing their overall appeal.</li><br />
-                    <li>Outdoor Furniture and Fixtures: We can also clean and refresh your outdoor furniture, fixtures, and other surfaces, such as pergolas, awnings, or play equipment. Our pressure washing techniques are safe and effective for a wide range of materials.</li>
+                    <li>Prevents Water Damage: Regular gutter cleaning prevents water from overflowing and causing damage to your roof, siding, foundation, and landscaping. By keeping your gutters clean, you safeguard your property from potential costly repairs.</li><br />
+                    <li>Extends Gutter Lifespan: Accumulated debris can lead to clogging, which puts excess strain on your gutters. Our thorough cleaning helps prolong the lifespan of your gutters, saving you money on premature replacements.</li><br />
+                    <li>Enhances Curb Appeal: Clean gutters contribute to the overall aesthetic appeal of your home or business. Our exterior gutter cleaning service restores the appearance of your gutters, adding to the curb appeal and value of your property.</li><br />
+                    <li>Professional and Reliable Service: With Lennon Window Cleaning, you can expect a professional and reliable service. Our experienced technicians are trained to handle gutter cleaning efficiently and safely. We prioritize customer satisfaction and ensure that the job is completed to the highest standards.</li>
                 </ol>
                 </div>
                 <p className='services-ol'>By choosing our gutter cleaning services, you can have peace of mind knowing that your gutters are in excellent hands. Let Lennon Window Cleaning take care of your gutter maintenance needs, keeping your property protected, functional, and looking its best.</p>
@@ -136,7 +144,7 @@ const Services = () => {
                     <li>Prevents Structural Damage: Moss can cause moisture retention and compromise the structural integrity of your roof. Our thorough cleaning and moss removal help prevent water infiltration and potential damage to underlying materials, such as shingles and decking.</li><br />
                     <li>Professional Service: At Lennon Window Cleaning, we pride ourselves on providing professional and reliable services. Our team is highly trained, ensuring that the roof cleaning process is carried out safely, efficiently, and to the highest standards.</li><br />
                 </ol>
-                <img className='window-service' src={green} />
+                <img alt="roof getting cleaned" className='window-service' src={shingles} />
                 </div>
                 <p className='services-ol'>With our roof cleaning services, you can trust that your roof is in capable hands. Let Lennon Window Cleaning help you maintain a clean, moss-free roof that enhances the beauty, durability, and value of your property.</p>
 
@@ -162,9 +170,9 @@ const Services = () => {
 
                 <p className='services-ol'>Convenient Take-Down and Storage:<br />Once the holiday season comes to an end, our service doesn't stop. We provide hassle-free light removal, carefully taking down the lights without causing any damage to your property. Additionally, we offer a container for you to store your lights until the following year, keeping them organized, protected, and ready for next season's installation.</p>
 
-                <p className='services-ol'><b>Benefits of Our Roof Cleaning Services:</b></p>
+                <p className='services-ol'><b>Benefits of Our Christmas Lights Service:</b></p>
                 <div className='img-service-container'>
-                <img className='window-service' src={green} />
+                <img alt="christmas lights being hung with care" className='window-service' src={xmas} />
                 <ol className='benefits-wrapper-right'>
                     <li>Personalized Design: Our custom fit installations are tailored to your home's specific features, creating a unique and visually stunning display.</li><br />
                     <li>Safety and Expertise: Leave the climbing and electrical work to our trained professionals, ensuring a safe and worry-free installation.</li><br />
@@ -174,6 +182,7 @@ const Services = () => {
                 </div>
                 <p className='services-ol'>Let Lennon Window Cleaning transform your home into a winter wonderland with our custom fit Christmas light installation service. Sit back, relax, and enjoy the holiday season while we take care of all your lighting needs.</p>
             </div>
+            <CTA1 />
             <Footer />
         </>
     )

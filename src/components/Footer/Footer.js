@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="footer-left">
                 <h2 className="footer-h2">The #1 Window Cleaning Service in the Greater Seattle Area</h2>
                 <p className="call-cta">Call today for a free estimate</p>
-                <h2 className="footer-phone">(425) 328-8827</h2>
+                <a href="tel:4253288827" className="footer-phone">(425) 328-8827</a>
                 <div className="bottom-nav">
                     <a href="/" className="bottom-nav-item">Home</a>
                     <a href="/about" className="bottom-nav-item">About</a>
@@ -24,10 +24,10 @@ const Footer = () => {
   
             </div>
             <div className="logo-lisence-wrapper">
-                <img className='footer-logo' src={logo}/>
+                <img onClick={() => window.location.href = '/' } alt="Lennon Window Cleaning logo" className='footer-logo' src={logo}/>
                 <a href="licensed" className="lisenced-bonded-div">
                     <b className="L-B-I">licensed,<br/>bonded,<br/>and insured</b>
-                    <img className='badge' src={badge} />
+                    <img alt="Bonded, insured, and licensed badge" className='badge' src={badge} />
                 </a>
             </div>
 

@@ -1,8 +1,67 @@
+.iframe-map-div {
+ display: flex;
+ background-color: #ffffffe8;
+ justify-content: center;
+ align-items: center;
+ width: 40vw;
+ height: 300px;
+ overflow: hidden;
+ border-radius: 20px;
+ border: 1px solid white;
+ margin: 0 0 70px 0;
+ filter: drop-shadow(-1px 3px 12px rgba(0, 0, 0, 0.25));
+}
+
+.iframe-map {
+  border: none;
+}
+
 .home-hero {
   position: relative;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+}
+
+.home-reviews2 {
+  position: relative;
+  width: 100%;
+  height: 18vw;
+  background-color: #A8C4D2;
+}
+.review2-h2 { 
+  width: 35vw;
+  color: white;
+  font-weight: 200;
+  font-size: 2.7vw;
+}
+.google-insta-links {
+  display: flex;
+  width: 20vw;
+  justify-content: space-between;
+}
+.google-icon {
+  width: 6.2vw;
+}
+.insta-icon {
+  width: 4.3vw;
+}
+
+.social-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7vw;
+  height: 7vw;
+  background-color: #F9F8F8;
+  border-radius: 7vw;
+  filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.25));
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+.social-circle:hover {
+  transform: translateY(3px) translateX(-2px);
+  filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.0));
 }
 
 .home-CTA {
@@ -31,12 +90,63 @@
   font-weight: 900;
 }
 
+
 .CTA-btn {
-  margin: 0!important;
-  color: #47697a !important;
-  font-size: 1.2vw !important;
+  color: #47697a ;
+  font-size: 1.5vw ;
+  font-weight: 600 ;
+  margin-top: 20px;
   font-family: 'Libre Franklin';
-  font-weight: 600 !important;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.391);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 45px;
+  border: 1px solid #E0E8EC;
+  overflow: hidden !important;  
+}
+.CTA-btn:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  width: 40px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  filter: blur(30px);
+  transform: translateX(-90px)  skewX(-15deg);
+}
+.CTA-btn:after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  width: 20px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-90px) skewX(-15deg);
+}
+.CTA-btn:hover{
+  outline-offset: 4px;
+  outline: 2px solid #C6EDF4;
+  filter: none;
+  cursor: pointer;
+ }
+.CTA-btn:hover:before{
+  transform: translateX(240px)  skewX(-15deg);  
+  opacity: 0.6;
+  transition: 1.3s;
+}
+.CTA-btn:hover:after{
+  transform: translateX(240px) skewX(-15deg);  
+  opacity: 1;
+  transition: 1.3s;
 }
 
 .customer-stories-container {
@@ -50,6 +160,8 @@
 .customer-stories-h2 {
   margin: 20px 0 -40px;
   font-size: 4vw;
+  width: 100vw;
+  text-align: center;
   color: #0F3D54;
   font-family: 'Libre Franklin';
 }
@@ -134,6 +246,7 @@
 
 .additional-services-p {
   font-family: 'Libre Franklin';
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -228,7 +341,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./assets/photos/heroimg.png');
+  background-image: url('./assets/photos/main-cover.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -256,10 +369,10 @@
 
 .home-hero-h1 {
   position: relative;
-  text-align: start;
+  text-align: flex-start;
   font-size: 7vw;
   font-family: 'Libre Franklin';
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .start-quote {
@@ -277,7 +390,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 2vw;
-  color: #E0E8EC;
+  color: white;
   text-shadow: 0px 2.55127px 12.7563px rgba(153, 153, 153, 0.4);
 }
 
@@ -287,8 +400,8 @@
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 8px;
-  color: #0F3D54;
-  font-weight: 400;
+  color: white;
+  font-weight: 600;
   font-size: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 15px 90px;
@@ -374,6 +487,15 @@
   transform: translateX(-90px) skewX(-15deg);
   animation: shineAnimation 2s linear;
 }
+input:hover, textarea:hover {
+  outline-offset: 4px; /* Adjust the value as needed */
+  outline: 1px solid #C6EDF4;
+}
+input[type="checkbox"]:hover {
+  outline: none;
+  border-radius: 2px solid pink;
+}
+
 
 @keyframes shineAnimation {
   0% {
@@ -403,7 +525,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./assets/photos/home-brighten.png');
+  background-image: url('./assets/photos/home-brighten.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -441,12 +563,12 @@ label {
   color: #F9F8F8;
 }
 .contact-container {
-  height: 500px;
+  height: 900px;
   margin-bottom: 500px;
   display: flex;
   justify-content: center;
 }
-input {
+input, textarea {
   background-color: #F9F8F8;
   height: 40px;
   width: 100%;
@@ -454,7 +576,16 @@ input {
   border-radius: 10px;
   font-size: 17px;
   border: none;
+  resize:none;
+  font-family: 'Libre Franklin';
+
 }
+textarea {
+  height: 80px;
+  padding: 10px 10px;
+
+}
+
 label {
   padding-bottom: 10px;
 }
@@ -507,6 +638,7 @@ label {
 }
 .testimonials-h3 {
   text-align: center;
+  font-size: 2vw;
   padding: 20px;
   color: #0F3D54;
   width: 50%;
@@ -570,7 +702,6 @@ label {
 
 .footer-phone {
   color: #0F3D54;
-  width: 490px;
   font-size: 69px;
   font-weight: 700;
   margin: 0;
@@ -593,6 +724,7 @@ label {
 }
 
 .footer-logo {
+  cursor: pointer;
   position: relative;
   width: 300px;
 }
@@ -899,6 +1031,13 @@ label {
   height: 43vw;
 }
 
+.review-dimensions {
+  position: relative;
+  width: 40vw;
+  height: 20vw;
+
+}
+
 .story-container {
   display: flex;
   flex-direction: column;
@@ -935,6 +1074,7 @@ input[type="checkbox"] {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
+  accent-color: #C6EDF4;
 }
 
 .send-btn {  
@@ -963,7 +1103,7 @@ input[type="checkbox"] {
 .license-hero-container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   background-color: #e0e8ec68;
   color: #0F3D54;
@@ -977,7 +1117,7 @@ input[type="checkbox"] {
 }
 
 .lisence-h1-span {
-  color: #47697a;
+  color: #0F3D54;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 50px;
   margin: -15px 0 5px;
@@ -1113,6 +1253,34 @@ b {
 }
 
 @media (max-width: 1000px) {
+  .home-additional-services-h2 {
+    font-size: 6vw;
+  }
+  .home-reviews2 {
+    height: 50vw;
+  }
+  .home-CTA {
+    height: 60vw;
+  }
+  .review2-h2 {
+    width: 42vw;
+    font-weight: 600;
+    font-size: 5.8vw;
+  }
+  .google-insta-links {
+    width: 34vw;
+  }
+  .social-circle {
+    border-radius: 100vw;
+    width: 13vw;
+    height: 13vw;
+  }
+  .google-icon {
+    width: 13vw;
+  }
+  .insta-icon {
+    width: 8.5vw;
+  }
   .side-nav-element {
     display: none;
   }
@@ -1156,8 +1324,8 @@ b {
   }
   .carousel-dimensions {
     position: relative;
-    width: 33vw;
-    height: 49vw;
+    width: 51vw;
+    height: 75vw;
   }
   .story-h2 {
     font-size: 12vw;
@@ -1167,12 +1335,15 @@ b {
     width: 83vw;
   }
   .CTA-btn {
-    padding: 12px 24px;
-    font-size: 10px !important;
+    padding: 2.5vw 3.5vw;
+    font-size: 4vw !important;
   }
   .CTA-h2 {
-    font-size: 3.1vw;
+    font-size: 5.8vw;
+    width: 48vw;
+
   }
+
 
   .home-hero {
     min-height: 70vh;
@@ -1223,10 +1394,35 @@ b {
   .hero {
     height: 80vw;
   }
+
+  .customer-stories-h2 {
+    font-size: 7vw;
+  }
+  .testimonials-h3 {
+    font-size: 3vw;
+    width: 80vw;
+  }
 }
 
 @media (max-width: 1400px) {
   .window-service {
     display: none;
   }
+}
+
+/* extra small phone screen */
+@media (max-width: 550px) {
+  .hero-home-btn {
+    width: 40vw;
+    font-size: 3.5vw;
+  }
+  .testimonials-h3 {
+    font-size: 4.3vw;
+    width: 90vw;
+
+  }
+}
+
+.invalid {
+  outline: 1px solid red;
 }

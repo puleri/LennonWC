@@ -11,6 +11,8 @@ const Contact = () => {
         lastName: '',
         email: '',
         phone: '',
+        hear: '',
+        comments: '',
         services: [], // Initialize as an empty array
     });
 
@@ -52,13 +54,15 @@ const Contact = () => {
         // Prepare the email data to be sent
         const emailData = {
             from_name: form.current.firstName.value + " " + form.current.lastName.value,
-            to_name: 'lennonwindowcleaning@gmail.com', // Replace with your desired recipient email address
-            subject: 'New Contact Form Submission',
+            to_name: 'Client Services Coordination', // Replace with your desired recipient email address
+            subject: 'Contact Form Submission',
             message_html: `First Name: ${form.current.firstName.value} \n
                      Last Name: ${form.current.lastName.value}\n
                      Email: ${form.current.email.value}\n
                      Phone: ${form.current.phone.value}\n
-                     Services: ${formData.services.join(', ')}`,
+                     How'd you hear about us: ${form.current.hear.value}\n
+                     Comments: ${form.current.comments.value}\n
+                     Interested Services: ${formData.services.join(', ')}`,
         };
 
 
@@ -84,7 +88,7 @@ const Contact = () => {
             <h4 className='contact-h4'>We’d love to hear from you. Let us know how we can help.</h4>
 
             <div className="contact-container">
-                <img className="blob" src={blob} />
+                <img alt="blob" className="blob" src={blob} />
                 <form className='form-container' ref={form} onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="firstName">First Name:</label>
@@ -103,6 +107,15 @@ const Contact = () => {
                         <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange} required />
                     </div>
                     <div className="form-group">
+                        <label htmlFor="hear">How did you hear about us?</label>
+                        <input type="text" id="hear" name="hear" value={formData.hear} onChange={handleInputChange} required />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="comments">Additional comments about project:</label>
+                        <textarea rows="4" cols="50" id="comments" name="comments" value={formData.comments} onChange={handleInputChange} />
+                    </div>
+
+                    <div className="form-group">
                         <label>What services are you interested in?</label>
                         <div className="checkbox-group">
                             <label className='checkbox-flex' htmlFor="windowCleaning">
@@ -117,8 +130,8 @@ const Contact = () => {
                                 <input type="checkbox" id="pressureWashing" name="services" value="Pressure Washing" checked={formData.services.includes('Pressure Washing')} onChange={handleInputChange} />
                                 Pressure Washing
                             </label>
-                            <label className='checkbox-flex' htmlFor="pressureWashing">
-                                <input type="checkbox" id="pressureWashing" name="services" value="Christmas Lights" checked={formData.services.includes('Christmas Lights')} onChange={handleInputChange} />
+                            <label className='checkbox-flex' htmlFor="xmasLights">
+                                <input type="checkbox" id="xmasLights" name="services" value="Christmas Lights" checked={formData.services.includes('Christmas Lights')} onChange={handleInputChange} />
                                 Christmas Lights
                             </label>
                         </div>

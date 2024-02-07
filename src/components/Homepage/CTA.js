@@ -11,7 +11,7 @@ const CTA = () => {
 
                 <div className="CTA-wrapper">
                     <div className="CTA-h2">Let our window cleaning service <em className="CTA-em">brighten &nbsp;</em>up your day.</div>
-                    <a href="/contact" className="learn-more CTA-btn">Get a quote</a>
+                    <a href="/contact" className="CTA-btn">Get a quote</a>
                 </div>
             </div>
 

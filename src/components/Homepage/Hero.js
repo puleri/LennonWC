@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className="home-hero-content2">
                 <a href="/contact" className="hero-home-btn">Call or message us for a free quote today!</a>
                 </div>
-                <h2 className='home-hero-h2'>Serving the Greater Seattle Area since 2018</h2>
+                <h2 className='home-hero-h2'>Serving the Greater Seattle Area since 2015</h2>
             </div>
 
         </>

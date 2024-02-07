@@ -39,7 +39,7 @@ const PhotoCarousel = ({ photoArr }) => {
             fontSize:'20px',
             fontFamily:'Raleway',
             border: 'none'
-          }} onClick={goToPreviousPhoto}><img src={arrow}
+          }} onClick={goToPreviousPhoto}><img alt="Previous photo" src={arrow}
           style={{
             height: '20px',
 
@@ -61,7 +61,7 @@ const PhotoCarousel = ({ photoArr }) => {
             fontFamily:'Raleway',
             border: 'none'
           }}
-        onClick={goToNextPhoto}><img src={arrow}
+        onClick={goToNextPhoto}><img alt="Next photo" src={arrow}
         style={{
             height: '20px',
             transform: 'scaleX(-1)'
