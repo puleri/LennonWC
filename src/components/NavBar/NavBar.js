@@ -42,6 +42,8 @@ const Navbar = () => {
       <br/>
       <a className={css.dropdownElement} href="/services">Services</a>
       <br/>
+      <a className={css.dropdownElement} href="/blog">Blog</a>
+      <br/>
       <a className={css.dropdownElement} href="/about">About us</a>
       <br/>
       <a className={css.dropdownElement} href="/reviews">Reviews</a>
@@ -59,9 +61,11 @@ const Navbar = () => {
           <div className={css.dropdownMobile}><DropdownMenu trigger={triggerElement} menu={menuContent} /></div>
           <div className={css.navBlock}>
             <p></p>
+            <a href="/home" className={css.navItem}>Home</a>
             <a href="/services" className={css.navItem}>Services</a>
             <a href="/about" className={css.navItem}>About us</a>
             <a href="/" className={css.navItemLogo}><img alt="Lennon Window Cleaning logo" src={logo} className={css.logo}/></a>
+            <a href="/blog" className={css.navItem}>Blog</a>
             <a href="/reviews" className={css.navItem}>Reviews</a>
             <a href="/contact" className={css.navItem}>Contact us</a>
             <p></p>

@@ -20,7 +20,7 @@ const Footer = () => {
                     <a href="/contact" className="bottom-nav-item">Contact</a>
                 </div>  
                 <p className="bottom-nav-fine">© {year} Lennon Window Cleaning, all rights reserved.</p>
-                <p className="bottom-nav-fine bottom-push">Website handcrafted with love by Matthew Puleri</p>
+                <a target="_blank" href="https://mattpuleri.com/" className="bottom-nav-fine bottom-push">Website handcrafted with love by Matthew Puleri</a>
   
             </div>
             <div className="logo-lisence-wrapper">

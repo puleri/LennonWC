@@ -1,5 +1,5 @@
 import React from "react";
-import stars from '../../assets/photos/stars.png'
+import stars from '../../assets/photos/stars.svg'
 
 const CustomerStories = () => {
 
@@ -14,7 +14,7 @@ const CustomerStories = () => {
                     — Makenna Larson, Seattle
                 </p>
                 <div className="relative">
-                    <img alt="4.5 Stars" className="star-img" src={stars} /><span className="number-reviews">(15)</span>
+                    <img alt="5 Stars" className="star-img" src={stars} /><span className="number-reviews">(51)</span>
                 </div>
             </div>
         </>
