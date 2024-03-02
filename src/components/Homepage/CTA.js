@@ -9,7 +9,7 @@ const CTA = () => {
                 {/* Use a div as a container for the background image */}
                 <div className="home-CTA-background" />
 
-                <div className="CTA-wrapper">
+                <div className="CTA-wrapper container">
                     <div className="CTA-h2">Let our window cleaning service <em className="CTA-em">brighten &nbsp;</em>up your day.</div>
                     <a href="/contact" className="CTA-btn">Get a quote</a>
                 </div>

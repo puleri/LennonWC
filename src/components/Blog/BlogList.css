@@ -1,0 +1,69 @@
+/* BlogList.css */
+
+.grid-container {
+    padding: 120px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+    gap: 30px; /* Row gap of 30px */
+  }
+  
+  .grid-item {
+    /* Add styles for each individual grid item if needed */
+  }
+
+  .bloglist-tile {
+    /* Styles for blog list tiles */
+    position: relative;
+    background-color: #E2F4FF;
+    padding: 30px;
+    height: 350px;
+    filter: none;
+    cursor: pointer;
+    border: 1px solid #D9D9D9;
+    color: #0F3D54 ;
+    border-radius: 8px;
+    transition: all .1s ease-in-out;
+    &:hover {
+        filter: drop-shadow(-5px 5px 7px #44444417);
+        transform: translateY(-4px);
+    }
+    &:focus {
+        filter: none;
+        transform: translateY(2px);
+    }
+  }
+
+  .bloglist-date {
+    font-weight: 100;
+    margin: 10px 0 12px;
+
+  }
+
+  .bloglist-title {
+    font-weight: 700;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .bloglist-description {
+    font-weight: 100;
+    margin: 10px 0 0 0;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .bloglist-author {
+    font-weight: 100;
+    position: absolute;
+    bottom: 10px;
+  } 
+
+  /* Additional styling for h3 and p elements */
+  .grid-item h3 {
+    margin-bottom: 5px; /* Add some spacing below the h3 element */
+  }
+  
+  .grid-item p {
+    /* Add styles for the content paragraph if needed */
+  }
+  

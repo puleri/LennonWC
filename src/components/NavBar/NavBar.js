@@ -61,7 +61,7 @@ const Navbar = () => {
           <div className={css.dropdownMobile}><DropdownMenu trigger={triggerElement} menu={menuContent} /></div>
           <div className={css.navBlock}>
             <p></p>
-            <a href="/home" className={css.navItem}>Home</a>
+            <a href="/" className={css.navItem}>Home</a>
             <a href="/services" className={css.navItem}>Services</a>
             <a href="/about" className={css.navItem}>About us</a>
             <a href="/" className={css.navItemLogo}><img alt="Lennon Window Cleaning logo" src={logo} className={css.logo}/></a>

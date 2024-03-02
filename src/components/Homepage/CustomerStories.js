@@ -14,7 +14,7 @@ const CustomerStories = () => {
                     — Makenna Larson, Seattle
                 </p>
                 <div className="relative">
-                    <img alt="5 Stars" className="star-img" src={stars} /><span className="number-reviews">(51)</span>
+                    <img alt="5 Stars" className="star-img" src={stars} /><span className="number-reviews">(53)</span>
                 </div>
             </div>
         </>

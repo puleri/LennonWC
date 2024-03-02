@@ -25,35 +25,53 @@ import Reviews from './components/Reviews/Reviews';
 import Contact from './components/Contact/Contact';
 import ThankYou from './components/ThankYou/ThankYou';
 import License from './components/License/License';
+import Blog from './components/Blog/Blog';
+import BlogPost from './components/Blog/BlogPost';
+
+
+import blogPosts from './components/Blog/BlogData.json'
 
 
 
 function App() {
   return (
     <>
-       
+
       <div className="">
-       <Router>
-         <Routes>
-           
-           <Route path="/" element={<Homepage/>}></Route>
-           <Route path="/services" element={<Services/>}></Route>
-           <Route path="/about" element={<About/>}></Route>
-           <Route path="/reviews" element={<Reviews/>}></Route>
-           <Route path="/contact" element={<Contact/>}></Route>
-           <Route path="/thank-you" element={<ThankYou/>}></Route>
-           <Route path="/licensed" element={<License/>}></Route>
+        <Router>
+          <Routes>
+
+            <Route path="/" element={<Homepage />}></Route>
+            <Route path="/services" element={<Services />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/reviews" element={<Reviews />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/thank-you" element={<ThankYou />}></Route>
+            <Route path="/licensed" element={<License />}></Route>
+            <Route exact path="/blog" element={<Blog />}></Route>
+
+            {/* Dynamic generation of blog post routes */}
+            {blogPosts.map((post) => (
+              <Route
+                key={post.id}
+                path={`/blog/${post.id}`}
+                element={<BlogPost 
+                  title={post.title} 
+                  content={post.content} 
+                  author={post.author}
+                  date={post.date}
+                  />}
+              />
+            ))}
+
+          </Routes>
+        </Router>
+      </div>
 
 
 
-         </Routes>
-       </Router>
-     </div>
-     
-     
-    
       {/* <ComingSoon /> */}
-      
+
     </>
 
   );

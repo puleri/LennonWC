@@ -1,0 +1,72 @@
+/* BlogFeatured.css */
+
+.blog-bg {
+    background: rgb(198,237,244);
+    background: linear-gradient(115deg, rgba(198,237,244,1) 40%, rgba(236,246,253,1) 100%);    
+}
+.featured {
+    padding: 60px 0 120px;
+       display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns, first column takes 1 fraction, next two take 2 fractions each */
+    grid-template-rows: auto auto auto; /* Three rows, each row takes content's natural height */
+    gap: 30px; /* Adjust the gap between grid items as needed */
+  }
+  
+  .title {
+    color: #0F3D54;
+    grid-column: 1 / span 3; /* Title spans all three columns */
+    align-self: end; /* Align the title to the bottom of its grid cell */
+    margin-bottom: 10px; /* Add some space below the title */
+  }
+  
+  .large-tile {
+    grid-column: span 1; /* Large tiles span 2 columns */
+    height: 480px;
+    grid-row: span 2; /* Large tiles span 2 rows */
+    border-radius: 40px;
+    border: 1px solid white;
+    padding: 35px;
+    color: #0F3D54;
+    font-size: 38px;
+    filter: none;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    &:hover {
+        filter: drop-shadow(-5px 5px 7px #44444429);
+        transform: translateY(-4px);
+    }
+    &:focus {
+        filter: none;
+        transform: translateY(2px);
+    }
+  }
+  
+  .small-tile {
+    grid-column: span 1; /* Small tiles span 1 column */
+    grid-row: span 1; /* Small tiles span 1 row */
+    border-radius: 40px;
+    border: 1px solid white;
+    padding: 30px;
+    color: #0F3D54;
+    font-size: 30px;
+    filter: none;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    &:hover {
+        filter: drop-shadow(-5px 5px 7px #44444429);
+        transform: translateY(-4px);
+    }
+    &:focus {
+        filter: none;
+        transform: translateY(2px);
+    }
+  }
+  .date-tile {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .small-tile.full-width {
+    grid-column: 1 / span 3; /* The last small tile spans all three columns */
+  }
+  

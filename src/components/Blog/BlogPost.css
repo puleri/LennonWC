@@ -1,0 +1,25 @@
+.blog-wrapper {
+    padding: 120px 0 120px;
+    color: #0F3D54;
+    font-family: 'Libre Franklin';
+
+    background: linear-gradient(0deg, rgba(198,237,244,1) 40%, rgba(236,246,253,1) 100%);    
+}
+
+.blog-title {
+    font-family: 'Libre Franklin';
+    font-weight: 500;
+    font-size: 70px;
+}
+
+.blog-content {
+    line-height: 2.5rem;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.blog-attribution {
+    line-height: 2.5rem;
+    font-weight: 400;
+    font-size: 20px;
+}
